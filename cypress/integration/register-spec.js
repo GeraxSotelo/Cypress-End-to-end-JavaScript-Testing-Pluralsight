@@ -30,5 +30,6 @@ describe('Register', () => {
 
         cy.contains('a.nav-link', 'Global Feed').click();
         cy.contains('a.nav-link', 'Global Feed').should('have.class', 'nav-link active');
+        cy.contains('a.nav-link', 'Your Feed').should('not.have.class', 'nav-link active');
     });
 })

@@ -11,7 +11,8 @@ describe('login test suite', () => {
         //find '.error-messages' class with child 'li' that contains specific message
         cy.contains('.error-messages li', 'email must be a valid email');
 
-        //Need to add assertiions that we are still in login page
+        //assertiion that we are still in login page
+        cy.location('pathname').should('equal', '/login');
     });
 
     it('happy path test', () => {
@@ -21,6 +22,15 @@ describe('login test suite', () => {
         cy.get('[data-cy=password]').type('visiting');
         cy.get('[data-cy=login-form]').submit();
 
-        //Need to add assertions that login happened correctly
+        //assertions that login happened correctly
+        cy.get('[data-cy=profile]').should('be.visible');
+        cy.location('pathname').should('equal', '/');
+
+        cy.get('[data-cy=your-feed]').should('have.class', 'nav-link active');
+        cy.get('[data-cy=global-feed]').should('not.have.class', 'nav-link active');
+
+        cy.get('[data-cy=global-feed]').click();
+        cy.get('[data-cy=global-feed]').should('have.class', 'nav-link active');
+        cy.get('[data-cy=your-feed').should('not.have.class', 'nav-link active');
     });
 })
