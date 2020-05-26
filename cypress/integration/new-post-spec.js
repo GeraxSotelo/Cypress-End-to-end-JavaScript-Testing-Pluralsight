@@ -67,7 +67,7 @@ describe('New Post on Conduit', () => {
         //get the first 1, find the 'fav-article' button & click it.
         cy.get('.article-preview').should('have.length', 1).first().find('[data-cy=fav-article]').click();
 
-        //validate that it is in the fav articles tab
+        //validate that it is in the 'fav articles' tab
         cy.get('[data-cy=favorited-articles]').click();
         cy.location('pathname').should('equal', '/@testuser/favorites');
         cy.contains('.article-preview', 'My New Post');
