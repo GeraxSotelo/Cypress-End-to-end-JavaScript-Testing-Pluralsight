@@ -26,11 +26,11 @@ describe('login test suite', () => {
         cy.get('[data-cy=profile]').should('be.visible');
         cy.location('pathname').should('equal', '/');
 
-        cy.get('[data-cy=your-feed]').should('have.class', 'nav-link active');
-        cy.get('[data-cy=global-feed]').should('not.have.class', 'nav-link active');
+        cy.contains('a.nav-link', 'Your Feed').should('have.class', 'nav-link active');
+        cy.contains('a.nav-link', 'Global Feed').should('not.have.class', 'nav-link active');
 
         cy.get('[data-cy=global-feed]').click();
-        cy.get('[data-cy=global-feed]').should('have.class', 'nav-link active');
-        cy.get('[data-cy=your-feed').should('not.have.class', 'nav-link active');
+        cy.contains('a.nav-link', 'Global Feed').should('have.class', 'nav-link active');
+        cy.contains('a.nav-link', 'Your Feed').should('not.have.class', 'nav-link active');
     });
 })

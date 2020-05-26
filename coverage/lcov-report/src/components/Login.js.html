@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">90.48% </span>
+        <span class="strong">9.52% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>19/21</span>
+        <span class='fraction'>2/21</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">84.62% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>11/13</span>
+        <span class='fraction'>0/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">87.5% </span>
+        <span class="strong">12.5% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>14/16</span>
+        <span class='fraction'>2/16</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -158,27 +158,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,9 +187,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -259,27 +259,27 @@ import {
   LOGIN_PAGE_UNLOADED
 } from '../constants/actionTypes';
 &nbsp;
-const mapStateToProps = state =&gt; ({ ...state.auth });
+const mapStateToProps = <span class="fstat-no" title="function not covered" >st</span>ate =&gt; (<span class="cstat-no" title="statement not covered" >{ ...state.auth })</span>;
 &nbsp;
-const mapDispatchToProps = dispatch =&gt; ({
-  onChangeEmail: value =&gt;
-    dispatch({ type: UPDATE_FIELD_AUTH, key: 'email', value }),
-  onChangePassword: value =&gt;
-    dispatch({ type: UPDATE_FIELD_AUTH, key: 'password', value }),
-  onSubmit: (email, password) =&gt;
-    dispatch({ type: LOGIN, payload: agent.Auth.login(email, password) }),
+const mapDispatchToProps = <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+  onChangeEmail: <span class="fstat-no" title="function not covered" >va</span>lue =&gt;
+<span class="cstat-no" title="statement not covered" >    dispatch({ type: UPDATE_FIELD_AUTH, key: 'email', value }),</span>
+  onChangePassword: <span class="fstat-no" title="function not covered" >va</span>lue =&gt;
+<span class="cstat-no" title="statement not covered" >    dispatch({ type: UPDATE_FIELD_AUTH, key: 'password', value }),</span>
+  onSubmit: <span class="fstat-no" title="function not covered" >(e</span>mail, password) =&gt;
+<span class="cstat-no" title="statement not covered" >    dispatch({ type: LOGIN, payload: agent.Auth.login(email, password) }),</span>
   onUnload: <span class="fstat-no" title="function not covered" >()</span> =&gt;
 <span class="cstat-no" title="statement not covered" >    dispatch({ type: LOGIN_PAGE_UNLOADED })</span>
 });
 &nbsp;
 class Login extends React.Component {
-  constructor() {
-    super();
-    this.changeEmail = ev =&gt; this.props.onChangeEmail(ev.target.value);
-    this.changePassword = ev =&gt; this.props.onChangePassword(ev.target.value);
-    this.submitForm = (email, password) =&gt; ev =&gt; {
-      ev.preventDefault();
-      this.props.onSubmit(email, password);
+<span class="fstat-no" title="function not covered" >  co</span>nstructor() {
+<span class="cstat-no" title="statement not covered" >    super();</span>
+<span class="cstat-no" title="statement not covered" >    this.changeEmail = <span class="fstat-no" title="function not covered" >ev</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.onChangeEmail(ev.target.value);</span></span>
+<span class="cstat-no" title="statement not covered" >    this.changePassword = <span class="fstat-no" title="function not covered" >ev</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.onChangePassword(ev.target.value);</span></span>
+<span class="cstat-no" title="statement not covered" >    this.submitForm = <span class="fstat-no" title="function not covered" >(e</span>mail, password) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >ev</span> =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >      ev.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >      this.props.onSubmit(email, password);</span>
     };
   }
 &nbsp;
@@ -287,10 +287,10 @@ class Login extends React.Component {
 <span class="cstat-no" title="statement not covered" >    this.props.onUnload();</span>
   }
 &nbsp;
-  render() {
-    const email = this.props.email;
-    const password = this.props.password;
-    return (
+<span class="fstat-no" title="function not covered" >  re</span>nder() {
+    const email = <span class="cstat-no" title="statement not covered" >this.props.email;</span>
+    const password = <span class="cstat-no" title="statement not covered" >this.props.password;</span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;div className="auth-page"&gt;
         &lt;div className="container page"&gt;
           &lt;div className="row"&gt;
@@ -355,7 +355,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Login);
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 20 2020 16:24:46 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue May 26 2020 15:18:47 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

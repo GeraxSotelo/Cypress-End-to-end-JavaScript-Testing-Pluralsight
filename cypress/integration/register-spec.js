@@ -2,8 +2,8 @@
 
 describe('Register', () => {
     it('register a new user', () => {
-        const username = 'visitor';
-        const email = 'infor@ad.com';
+        const username = 'visitorone';
+        const email = 'infoone@adone.com';
         const password = 'visiting';
 
         cy.visit('http://localhost:4100');
