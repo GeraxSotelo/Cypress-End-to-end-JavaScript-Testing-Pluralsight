@@ -22,5 +22,13 @@ describe('Register', () => {
         cy.location('pathname').should('equal', '/');
         //profile should be visible
         cy.get('[data-cy=profile]').should('be.visible');
+
+        //ensure 'a.nav-link' is available and contains the text 'Your Feed' and
+        //assert it has class 'nav-link active'
+        cy.contains('a.nav-link', 'Your Feed').should('have.class', 'nav-link active');
+        cy.contains('a.nav-link', 'Global Feed').should('not.have.class', 'nav-link active');
+
+        cy.contains('a.nav-link', 'Global Feed').click();
+        cy.contains('a.nav-link', 'Global Feed').should('have.class', 'nav-link active');
     });
 })
