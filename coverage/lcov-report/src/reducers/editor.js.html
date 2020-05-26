@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">38.46% </span>
+        <span class="strong">84.62% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>5/13</span>
+        <span class='fraction'>11/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">17.39% </span>
+        <span class="strong">69.57% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>4/23</span>
+        <span class='fraction'>16/23</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">50% </span>
@@ -35,16 +35,16 @@
         <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">38.46% </span>
+        <span class="strong">84.62% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>5/13</span>
+        <span class='fraction'>11/13</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -111,11 +111,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">101x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,36 +121,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">53x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">80x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
   EDITOR_PAGE_LOADED,
@@ -166,31 +166,31 @@
 &nbsp;
 export default (state = {}, action) =&gt; {
   switch (action.type) {
-<span class="branch-0 cbranch-no" title="branch not covered" >    case EDITOR_PAGE_LOADED:</span>
-<span class="cstat-no" title="statement not covered" >      return {</span>
+    case EDITOR_PAGE_LOADED:
+      return {
         ...state,
-        articleSlug: action.payload ? action.payload.article.slug : '',
-        title: action.payload ? action.payload.article.title : '',
-        description: action.payload ? action.payload.article.description : '',
-        body: action.payload ? action.payload.article.body : '',
+        articleSlug: action.payload ? <span class="branch-0 cbranch-no" title="branch not covered" >action.payload.article.slug </span>: '',
+        title: action.payload ? <span class="branch-0 cbranch-no" title="branch not covered" >action.payload.article.title </span>: '',
+        description: action.payload ? <span class="branch-0 cbranch-no" title="branch not covered" >action.payload.article.description </span>: '',
+        body: action.payload ? <span class="branch-0 cbranch-no" title="branch not covered" >action.payload.article.body </span>: '',
         tagInput: '',
-        tagList: action.payload ? action.payload.article.tagList : []
+        tagList: action.payload ? <span class="branch-0 cbranch-no" title="branch not covered" >action.payload.article.tagList </span>: []
       };
-<span class="branch-1 cbranch-no" title="branch not covered" >    case EDITOR_PAGE_UNLOADED:</span>
-<span class="cstat-no" title="statement not covered" >      return {};</span>
-<span class="branch-2 cbranch-no" title="branch not covered" >    case ARTICLE_SUBMITTED:</span>
-<span class="cstat-no" title="statement not covered" >      return {</span>
+    case EDITOR_PAGE_UNLOADED:
+      return {};
+    case ARTICLE_SUBMITTED:
+      return {
         ...state,
         inProgress: null,
-        errors: action.error ? action.payload.errors : null
+        errors: action.error ? <span class="branch-0 cbranch-no" title="branch not covered" >action.payload.errors </span>: null
       };
     case ASYNC_START:
-      <span class="missing-if-branch" title="if path not taken" >I</span>if (action.subtype === ARTICLE_SUBMITTED) {
-<span class="cstat-no" title="statement not covered" >        return { ...state, inProgress: true };</span>
+      if (action.subtype === ARTICLE_SUBMITTED) {
+        return { ...state, inProgress: true };
       }
       break;
-<span class="branch-4 cbranch-no" title="branch not covered" >    case ADD_TAG:</span>
-<span class="cstat-no" title="statement not covered" >      return {</span>
+    case ADD_TAG:
+      return {
         ...state,
         tagList: state.tagList.concat([state.tagInput]),
         tagInput: ''
@@ -200,8 +200,8 @@ export default (state = {}, action) =&gt; {
         ...state,
         tagList: state.tagList.filter(<span class="fstat-no" title="function not covered" >ta</span>g =&gt; <span class="cstat-no" title="statement not covered" >tag !== action.tag)</span>
       };
-<span class="branch-6 cbranch-no" title="branch not covered" >    case UPDATE_FIELD_EDITOR:</span>
-<span class="cstat-no" title="statement not covered" >      return { ...state, [action.key]: action.value };</span>
+    case UPDATE_FIELD_EDITOR:
+      return { ...state, [action.key]: action.value };
     default:
       return state;
   }
@@ -214,7 +214,7 @@ export default (state = {}, action) =&gt; {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue May 26 2020 15:18:47 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue May 26 2020 16:01:20 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

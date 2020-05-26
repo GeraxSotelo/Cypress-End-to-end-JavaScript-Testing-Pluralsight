@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">58.33% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>7/12</span>
+        <span class='fraction'>8/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">53.13% </span>
+        <span class="strong">43.75% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>17/32</span>
+        <span class='fraction'>14/32</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">58.33% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>7/12</span>
+        <span class='fraction'>8/12</span>
       </div>
     </div>
     <p class="quiet">
@@ -142,7 +142,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">101x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -155,17 +155,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -183,7 +183,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">52x</span>
+<span class="cline-any cline-yes">96x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
@@ -216,17 +216,17 @@ export default (state = defaultState, action) =&gt; {
     case APP_LOAD:
       return {
         ...state,
-        token: action.token || null,
+        token: action.token || <span class="branch-1 cbranch-no" title="branch not covered" >null,</span>
         appLoaded: true,
-        currentUser: action.payload ? <span class="branch-0 cbranch-no" title="branch not covered" >action.payload.user </span>: null
+        currentUser: action.payload ? action.payload.user : <span class="branch-1 cbranch-no" title="branch not covered" >null</span>
       };
     case REDIRECT:
       return { ...state, redirectTo: null };
 <span class="branch-2 cbranch-no" title="branch not covered" >    case LOGOUT:</span>
 <span class="cstat-no" title="statement not covered" >      return { ...state, redirectTo: '/', token: null, currentUser: null };</span>
-<span class="branch-3 cbranch-no" title="branch not covered" >    case ARTICLE_SUBMITTED:</span>
-      const redirectUrl = <span class="cstat-no" title="statement not covered" >`/article/${action.payload.article.slug}`;</span>
-<span class="cstat-no" title="statement not covered" >      return { ...state, redirectTo: redirectUrl };</span>
+    case ARTICLE_SUBMITTED:
+      const redirectUrl = `/article/${action.payload.article.slug}`;
+      return { ...state, redirectTo: redirectUrl };
 <span class="branch-4 cbranch-no" title="branch not covered" >    case SETTINGS_SAVED:</span>
 <span class="cstat-no" title="statement not covered" >      return {</span>
         ...state,
@@ -234,17 +234,17 @@ export default (state = defaultState, action) =&gt; {
         currentUser: action.error ? null : action.payload.user
       };
 <span class="branch-5 cbranch-no" title="branch not covered" >    case LOGIN:</span>
-    case REGISTER:
-      return {
+<span class="branch-6 cbranch-no" title="branch not covered" >    case REGISTER:</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
         ...state,
-        redirectTo: action.error ? <span class="branch-0 cbranch-no" title="branch not covered" >null </span>: '/',
-        token: action.error ? <span class="branch-0 cbranch-no" title="branch not covered" >null </span>: action.payload.user.token,
-        currentUser: action.error ? <span class="branch-0 cbranch-no" title="branch not covered" >null </span>: action.payload.user
+        redirectTo: action.error ? null : '/',
+        token: action.error ? null : action.payload.user.token,
+        currentUser: action.error ? null : action.payload.user
       };
 <span class="branch-7 cbranch-no" title="branch not covered" >    case DELETE_ARTICLE:</span>
 <span class="cstat-no" title="statement not covered" >      return { ...state, redirectTo: '/' };</span>
 <span class="branch-8 cbranch-no" title="branch not covered" >    case ARTICLE_PAGE_UNLOADED:</span>
-<span class="branch-9 cbranch-no" title="branch not covered" >    case EDITOR_PAGE_UNLOADED:</span>
+    case EDITOR_PAGE_UNLOADED:
     case HOME_PAGE_UNLOADED:
     case PROFILE_PAGE_UNLOADED:
     case PROFILE_FAVORITES_PAGE_UNLOADED:
@@ -262,7 +262,7 @@ export default (state = defaultState, action) =&gt; {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue May 26 2020 15:18:47 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue May 26 2020 16:01:20 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>
