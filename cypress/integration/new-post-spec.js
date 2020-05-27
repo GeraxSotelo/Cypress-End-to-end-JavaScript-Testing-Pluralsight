@@ -10,7 +10,7 @@ describe('New Post on Conduit', () => {
         //Define aliases - Remember not to create aliases when you are deep in the chain
         //Place certain aliases in beforeEach() hook because it runs before each test so aliases will be defined for each test
         //You can also define aliases within a test and reference them within the test if you have a lengthy test.
-        //When you use the as() command to define aliases, you can use the '@' command to reference them, but you can only do that with cy.get() or cy.wait()
+        //When using the as() command to define aliases, you can use the '@' command to reference them, but only with cy.get() or cy.wait()
         cy.get('[data-cy=new-post]').click().as('ClickOnNewPost');
         cy.get('[data-cy=title]').as('Title');
         cy.get('[data-cy=about]').as('About');
