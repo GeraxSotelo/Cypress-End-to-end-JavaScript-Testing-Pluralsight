@@ -16,11 +16,13 @@ describe('comments', () => {
   }
 
   it('Test post comments with stubbed response', () => {
-    cy.writeArticleAndPostComment(article); //from index.js file in 'support' folder
+    //cy.writeArticleAndPostComment() from index.js file in 'support' folder. Uses cy.route() to stub response
+    cy.writeArticleAndPostComment(article);
     cy.contains('[data-cy=comment]', 'great post 👍').should('be.visible');
   });
 
   it('Test post comment waiting for server response', () => {
+    //cy.postArticle() & cy.postComment() from index.js file in 'support' folder. Uses cy.request()
     cy.postArticle(article);
     cy.postComment('my-new-article', 'my new comment');
 

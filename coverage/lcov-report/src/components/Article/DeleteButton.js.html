@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">63.64% </span>
+        <span class="strong">18.18% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>7/11</span>
+        <span class='fraction'>2/11</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">60% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/5</span>
+        <span class='fraction'>0/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">60% </span>
+        <span class="strong">20% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/10</span>
+        <span class='fraction'>2/10</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -81,21 +81,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -103,7 +103,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
@@ -111,19 +111,19 @@ import agent from '../../agent'
 import { connect } from 'react-redux'
 import { DELETE_COMMENT } from '../../constants/actionTypes'
 &nbsp;
-const mapDispatchToProps = dispatch =&gt; ({
+const mapDispatchToProps = <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
   onClick: <span class="fstat-no" title="function not covered" >(p</span>ayload, commentId) =&gt;
 <span class="cstat-no" title="statement not covered" >    dispatch({ type: DELETE_COMMENT, payload, commentId })</span>
 })
 &nbsp;
-const DeleteButton = props =&gt; {
-  const del = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+const DeleteButton = <span class="fstat-no" title="function not covered" >pr</span>ops =&gt; {
+  const del = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
     const payload = <span class="cstat-no" title="statement not covered" >agent.Comments.delete(props.slug, props.commentId)</span>
 <span class="cstat-no" title="statement not covered" >    props.onClick(payload, props.commentId)</span>
   }
 &nbsp;
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (props.show) {
-    return (
+<span class="cstat-no" title="statement not covered" >  if (props.show) {</span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;span className='mod-options' data-cy='delete-button'&gt;
         &lt;i className='ion-trash-a' onClick={del} /&gt;
       &lt;/span&gt;
@@ -133,7 +133,7 @@ const DeleteButton = props =&gt; {
 }
 &nbsp;
 export default connect(
-  () =&gt; ({}),
+<span class="fstat-no" title="function not covered" >  ()</span> =&gt; (<span class="cstat-no" title="statement not covered" >{})</span>,
   mapDispatchToProps
 )(DeleteButton)
 &nbsp;</pre></td></tr>
@@ -142,7 +142,7 @@ export default connect(
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 27 2020 13:52:04 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 27 2020 14:14:01 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\..\prettify.js"></script>
