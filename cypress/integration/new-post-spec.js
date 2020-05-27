@@ -6,17 +6,32 @@ describe('New Post on Conduit', () => {
         cy.task('cleanDatabase');
         cy.registerUserIfNeeded();
         cy.login();
+
+        //Define aliases - Remember not to create aliases when you are deep in the chain
+        //Place certain aliases in beforeEach() hook because it runs before each test so aliases will be defined for each test
+        //You can also define aliases within a test and reference them within the test if you have a lengthy test.
+        //When you use the as() command to define aliases, you can use the '@' command to reference them, but you can only do that with cy.get() or cy.wait()
+        cy.get('[data-cy=new-post]').click().as('ClickOnNewPost');
+        cy.get('[data-cy=title]').as('Title');
+        cy.get('[data-cy=about]').as('About');
+        cy.get('[data-cy=article]').as('Article');
+        cy.get('[data-cy=tags]').as('Tags');
+        cy.get('[data-cy=publish]').as('Publish');
+
+        //Do not create state changing aliases within beforeEach() hook
+        //DO NOT DO THIS
+        //cy.get('[data-cy=publish]').click().as('ClickPublish');
     })
 
     it('write a new post', () => {
         //Fill details to write a new post
-        cy.get('[data-cy=new-post]').click();
-        cy.get('[data-cy=title]').type('My New Post');
-        cy.get('[data-cy=about]').type('This is my new post and I am excited');
-        cy.get('[data-cy=article]').type('Here is my lengthy article...');
+        cy.get('@ClickOnNewPost'); //using alias
+        cy.get('@Title').type('My New Post');
+        cy.get('@About').type('This is my new post and I am excited');
+        cy.get('@Article').type('Here is my lengthy article...');
         //'enter' in curly braces uses the 'enter' key on the keyboard
-        cy.get('[data-cy=tags]').type('test{enter}');
-        cy.get('[data-cy=publish]').click();
+        cy.get('@Tags').type('test{enter}');
+        cy.get('@Publish').click();
 
         //assertion to check url
         cy.location('pathname').should('equal', '/article/my-new-post');

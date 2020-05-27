@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1590535811371" clover="3.2.0">
-  <project timestamp="1590535811371" name="All files">
+<coverage generated="1590539104490" clover="3.2.0">
+  <project timestamp="1590539104491" name="All files">
     <metrics statements="506" coveredstatements="333" conditionals="239" coveredconditionals="137" methods="213" coveredmethods="125" elements="958" coveredelements="595" complexity="0" loc="506" ncloc="506" packages="6" files="38" classes="38"/>
     <package name="src">
       <metrics statements="91" coveredstatements="60" conditionals="30" coveredconditionals="15" methods="41" coveredmethods="28"/>
@@ -9,7 +9,7 @@
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
-        <line num="9" count="23" type="stmt"/>
+        <line num="9" count="25" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
         <line num="13" count="27" type="cond" truecount="1" falsecount="1"/>
@@ -60,18 +60,18 @@
       <file name="middleware.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\middleware.js">
         <metrics statements="38" coveredstatements="19" conditionals="24" coveredconditionals="11" methods="9" coveredmethods="8"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="12" count="417" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="421" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="18" type="stmt"/>
         <line num="15" count="18" type="stmt"/>
         <line num="16" count="18" type="stmt"/>
         <line num="18" count="18" type="stmt"/>
-        <line num="20" count="16" type="stmt"/>
-        <line num="21" count="16" type="cond" truecount="3" falsecount="1"/>
+        <line num="20" count="17" type="stmt"/>
+        <line num="21" count="17" type="cond" truecount="3" falsecount="1"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="24" count="16" type="stmt"/>
-        <line num="25" count="16" type="stmt"/>
-        <line num="26" count="16" type="stmt"/>
-        <line num="27" count="16" type="stmt"/>
+        <line num="24" count="17" type="stmt"/>
+        <line num="25" count="17" type="stmt"/>
+        <line num="26" count="17" type="stmt"/>
+        <line num="27" count="17" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="32" count="0" type="stmt"/>
@@ -86,17 +86,17 @@
         <line num="42" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="48" count="18" type="stmt"/>
-        <line num="51" count="399" type="stmt"/>
+        <line num="51" count="403" type="stmt"/>
         <line num="54" count="3" type="stmt"/>
-        <line num="55" count="399" type="cond" truecount="3" falsecount="1"/>
+        <line num="55" count="403" type="cond" truecount="3" falsecount="1"/>
         <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="57" count="0" type="stmt"/>
         <line num="58" count="0" type="stmt"/>
-        <line num="60" count="399" type="cond" truecount="1" falsecount="1"/>
+        <line num="60" count="403" type="cond" truecount="1" falsecount="1"/>
         <line num="61" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
-        <line num="65" count="399" type="stmt"/>
-        <line num="69" count="417" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="403" type="stmt"/>
+        <line num="69" count="421" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="reducer.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducer.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -116,19 +116,19 @@
       <file name="App.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\App.js">
         <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7"/>
         <line num="18" count="3" type="stmt"/>
-        <line num="19" count="383" type="stmt"/>
+        <line num="19" count="386" type="stmt"/>
         <line num="26" count="3" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
         <line num="30" count="4" type="stmt"/>
-        <line num="35" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="19" type="cond" truecount="2" falsecount="0"/>
         <line num="37" count="4" type="stmt"/>
         <line num="38" count="4" type="stmt"/>
         <line num="43" count="3" type="stmt"/>
         <line num="44" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="45" count="3" type="stmt"/>
         <line num="48" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="52" count="20" type="cond" truecount="2" falsecount="0"/>
-        <line num="53" count="17" type="stmt"/>
+        <line num="52" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="19" type="stmt"/>
         <line num="72" count="3" type="stmt"/>
       </file>
       <file name="ArticleList.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\ArticleList.js">
@@ -162,7 +162,7 @@
       </file>
       <file name="Editor.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Editor.js">
         <metrics statements="38" coveredstatements="32" conditionals="12" coveredconditionals="9" methods="20" coveredmethods="18"/>
-        <line num="14" count="344" type="stmt"/>
+        <line num="14" count="346" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
         <line num="19" count="5" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
@@ -189,7 +189,7 @@
         <line num="59" count="4" type="stmt"/>
         <line num="60" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="64" count="4" type="stmt"/>
-        <line num="69" count="331" type="cond" truecount="1" falsecount="1"/>
+        <line num="69" count="333" type="cond" truecount="1" falsecount="1"/>
         <line num="70" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="71" count="0" type="stmt"/>
         <line num="72" count="0" type="stmt"/>
@@ -198,28 +198,28 @@
         <line num="82" count="1" type="stmt"/>
         <line num="84" count="3" type="stmt"/>
         <line num="88" count="4" type="stmt"/>
-        <line num="92" count="335" type="stmt"/>
+        <line num="92" count="337" type="stmt"/>
         <line num="147" count="108" type="stmt"/>
       </file>
       <file name="Header.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Header.js">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="5" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="22" type="cond" truecount="2" falsecount="0"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="28" count="17" type="stmt"/>
+        <line num="28" count="19" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="20" type="cond" truecount="2" falsecount="0"/>
-        <line num="33" count="17" type="stmt"/>
+        <line num="32" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="19" type="stmt"/>
         <line num="69" count="3" type="stmt"/>
-        <line num="74" count="20" type="stmt"/>
+        <line num="74" count="22" type="stmt"/>
       </file>
       <file name="ListErrors.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\ListErrors.js">
         <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
-        <line num="5" count="335" type="stmt"/>
-        <line num="6" count="335" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="337" type="stmt"/>
+        <line num="6" count="337" type="cond" truecount="1" falsecount="1"/>
         <line num="7" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="21" count="335" type="stmt"/>
+        <line num="21" count="337" type="stmt"/>
       </file>
       <file name="ListPagination.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\ListPagination.js">
         <metrics statements="19" coveredstatements="5" conditionals="6" coveredconditionals="1" methods="7" coveredmethods="3"/>
@@ -281,7 +281,7 @@
         <line num="43" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="49" count="2" type="stmt"/>
-        <line num="62" count="11" type="stmt"/>
+        <line num="62" count="10" type="stmt"/>
         <line num="68" count="3" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
         <line num="74" count="1" type="stmt"/>
@@ -362,19 +362,19 @@
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="3" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-        <line num="42" count="3" type="stmt"/>
+        <line num="42" count="7" type="stmt"/>
       </file>
       <file name="ArticleMeta.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Article\ArticleMeta.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="5" count="3" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
       </file>
       <file name="Comment.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Article\Comment.js">
         <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -386,30 +386,30 @@
       <file name="CommentContainer.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Article\CommentContainer.js">
         <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="7" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="3" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
       </file>
       <file name="CommentInput.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Article\CommentInput.js">
         <metrics statements="13" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
         <line num="6" count="3" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
       </file>
       <file name="CommentList.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Article\CommentList.js">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
       <file name="DeleteButton.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Article\DeleteButton.js">
@@ -427,18 +427,18 @@
       </file>
       <file name="index.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\components\Article\index.js">
         <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="8" coveredmethods="8"/>
-        <line num="9" count="13" type="stmt"/>
+        <line num="9" count="15" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
         <line num="16" count="4" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
         <line num="23" count="4" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
-        <line num="34" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="35" count="4" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="39" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Home">
@@ -548,18 +548,18 @@
       <metrics statements="69" coveredstatements="48" conditionals="113" coveredconditionals="68" methods="11" coveredmethods="9"/>
       <file name="article.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\article.js">
         <metrics statements="8" coveredstatements="4" conditionals="12" coveredconditionals="4" methods="2" coveredmethods="1"/>
-        <line num="9" count="408" type="cond" truecount="3" falsecount="2"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="9" count="412" type="cond" truecount="3" falsecount="2"/>
+        <line num="11" count="3" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="33" count="404" type="stmt"/>
+        <line num="33" count="407" type="stmt"/>
       </file>
       <file name="articleList.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\articleList.js">
         <metrics statements="13" coveredstatements="9" conditionals="15" coveredconditionals="11" methods="2" coveredmethods="2"/>
-        <line num="16" count="408" type="cond" truecount="9" falsecount="3"/>
+        <line num="16" count="412" type="cond" truecount="9" falsecount="3"/>
         <line num="19" count="1" type="stmt"/>
         <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="23" count="1" type="stmt"/>
@@ -571,24 +571,24 @@
         <line num="62" count="0" type="stmt"/>
         <line num="73" count="2" type="stmt"/>
         <line num="82" count="1" type="stmt"/>
-        <line num="84" count="398" type="stmt"/>
+        <line num="84" count="402" type="stmt"/>
       </file>
       <file name="auth.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\auth.js">
         <metrics statements="9" coveredstatements="5" conditionals="14" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="11" count="408" type="cond" truecount="2" falsecount="5"/>
+        <line num="11" count="412" type="cond" truecount="2" falsecount="5"/>
         <line num="14" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="23" count="18" type="cond" truecount="3" falsecount="1"/>
         <line num="24" count="0" type="stmt"/>
         <line num="26" count="18" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="30" count="390" type="stmt"/>
+        <line num="30" count="394" type="stmt"/>
         <line num="33" count="18" type="stmt"/>
       </file>
       <file name="common.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\common.js">
         <metrics statements="12" coveredstatements="8" conditionals="32" coveredconditionals="15" methods="1" coveredmethods="1"/>
         <line num="20" count="3" type="stmt"/>
-        <line num="27" count="408" type="cond" truecount="12" falsecount="5"/>
+        <line num="27" count="412" type="cond" truecount="12" falsecount="5"/>
         <line num="29" count="3" type="stmt"/>
         <line num="36" count="4" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
@@ -598,11 +598,11 @@
         <line num="50" count="0" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
         <line num="66" count="10" type="stmt"/>
-        <line num="68" count="387" type="stmt"/>
+        <line num="68" count="391" type="stmt"/>
       </file>
       <file name="editor.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\editor.js">
         <metrics statements="13" coveredstatements="11" conditionals="23" coveredconditionals="21" methods="2" coveredmethods="1"/>
-        <line num="12" count="408" type="cond" truecount="7" falsecount="1"/>
+        <line num="12" count="412" type="cond" truecount="7" falsecount="1"/>
         <line num="14" count="4" type="stmt"/>
         <line num="24" count="4" type="stmt"/>
         <line num="26" count="4" type="stmt"/>
@@ -613,31 +613,31 @@
         <line num="43" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="48" count="314" type="stmt"/>
-        <line num="50" count="59" type="stmt"/>
+        <line num="50" count="63" type="stmt"/>
         <line num="53" count="14" type="stmt"/>
       </file>
       <file name="home.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\home.js">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="4" count="408" type="cond" truecount="3" falsecount="0"/>
+        <line num="4" count="412" type="cond" truecount="3" falsecount="0"/>
         <line num="6" count="3" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="13" count="402" type="stmt"/>
+        <line num="13" count="406" type="stmt"/>
       </file>
       <file name="profile.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\profile.js">
         <metrics statements="5" coveredstatements="4" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="9" count="408" type="cond" truecount="3" falsecount="2"/>
+        <line num="9" count="412" type="cond" truecount="3" falsecount="2"/>
         <line num="11" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="22" count="405" type="stmt"/>
+        <line num="22" count="409" type="stmt"/>
       </file>
       <file name="settings.js" path="C:\Users\gerax.sotelo\Documents\Pluralsight\Cypress - End-to-end JavaScript Testing\Conduit-Cypress\client\src\reducers\settings.js">
         <metrics statements="5" coveredstatements="3" conditionals="7" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="8" count="408" type="cond" truecount="2" falsecount="2"/>
+        <line num="8" count="412" type="cond" truecount="2" falsecount="2"/>
         <line num="10" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="18" type="stmt"/>
-        <line num="23" count="390" type="stmt"/>
+        <line num="23" count="394" type="stmt"/>
       </file>
     </package>
   </project>
