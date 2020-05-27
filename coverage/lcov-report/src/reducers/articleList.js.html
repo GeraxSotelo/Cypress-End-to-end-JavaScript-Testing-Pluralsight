@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">69.23% </span>
+        <span class="strong">23.08% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>9/13</span>
+        <span class='fraction'>3/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">73.33% </span>
+        <span class="strong">20% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>11/15</span>
+        <span class='fraction'>3/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">69.23% </span>
+        <span class="strong">23.08% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/13</span>
+        <span class='fraction'>3/13</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -147,14 +147,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">412x</span>
+<span class="cline-any cline-yes">50x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -191,7 +191,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -204,7 +204,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -213,9 +213,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">402x</span>
+<span class="cline-any cline-yes">47x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
@@ -234,13 +234,13 @@
 &nbsp;
 export default (state = {}, action) =&gt; {
   switch (action.type) {
-    case ARTICLE_FAVORITED:
-    case ARTICLE_UNFAVORITED:
-      return {
+<span class="branch-0 cbranch-no" title="branch not covered" >    case ARTICLE_FAVORITED:</span>
+<span class="branch-1 cbranch-no" title="branch not covered" >    case ARTICLE_UNFAVORITED:</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
         ...state,
-        articles: state.articles.map(article =&gt; {
-          <span class="missing-if-branch" title="else path not taken" >E</span>if (article.slug === action.payload.article.slug) {
-            return {
+        articles: state.articles.map(<span class="fstat-no" title="function not covered" >ar</span>ticle =&gt; {
+<span class="cstat-no" title="statement not covered" >          if (article.slug === action.payload.article.slug) {</span>
+<span class="cstat-no" title="statement not covered" >            return {</span>
               ...article,
               favorited: action.payload.article.favorited,
               favoritesCount: action.payload.article.favoritesCount
@@ -276,8 +276,8 @@ export default (state = {}, action) =&gt; {
         currentPage: 0,
         tab: action.tab
       };
-    case HOME_PAGE_UNLOADED:
-      return {};
+<span class="branch-5 cbranch-no" title="branch not covered" >    case HOME_PAGE_UNLOADED:</span>
+<span class="cstat-no" title="statement not covered" >      return {};</span>
 <span class="branch-6 cbranch-no" title="branch not covered" >    case CHANGE_TAB:</span>
 <span class="cstat-no" title="statement not covered" >      return {</span>
         ...state,
@@ -288,18 +288,18 @@ export default (state = {}, action) =&gt; {
         currentPage: 0,
         tag: null
       };
-    case PROFILE_PAGE_LOADED:
-    case PROFILE_FAVORITES_PAGE_LOADED:
-      return {
+<span class="branch-7 cbranch-no" title="branch not covered" >    case PROFILE_PAGE_LOADED:</span>
+<span class="branch-8 cbranch-no" title="branch not covered" >    case PROFILE_FAVORITES_PAGE_LOADED:</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
         ...state,
         pager: action.pager,
         articles: action.payload[1].articles,
         articlesCount: action.payload[1].articlesCount,
         currentPage: 0
       };
-    case PROFILE_PAGE_UNLOADED:
-    case PROFILE_FAVORITES_PAGE_UNLOADED:
-      return {};
+<span class="branch-9 cbranch-no" title="branch not covered" >    case PROFILE_PAGE_UNLOADED:</span>
+<span class="branch-10 cbranch-no" title="branch not covered" >    case PROFILE_FAVORITES_PAGE_UNLOADED:</span>
+<span class="cstat-no" title="statement not covered" >      return {};</span>
     default:
       return state;
   }
@@ -310,7 +310,7 @@ export default (state = {}, action) =&gt; {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue May 26 2020 18:25:04 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 27 2020 13:52:04 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

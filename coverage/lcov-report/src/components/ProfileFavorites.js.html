@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">62.5% </span>
+        <span class="strong">12.5% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>5/8</span>
+        <span class='fraction'>1/8</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">57.14% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>4/7</span>
+        <span class='fraction'>0/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">16.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/6</span>
+        <span class='fraction'>1/6</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -109,18 +109,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -129,7 +122,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -162,16 +162,16 @@ import {
   PROFILE_PAGE_UNLOADED
 } from '../constants/actionTypes';
 &nbsp;
-const mapDispatchToProps = dispatch =&gt; ({
-  onLoad: (pager, payload) =&gt;
-    dispatch({ type: PROFILE_PAGE_LOADED, pager, payload }),
+const mapDispatchToProps = <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+  onLoad: <span class="fstat-no" title="function not covered" >(p</span>ager, payload) =&gt;
+<span class="cstat-no" title="statement not covered" >    dispatch({ type: PROFILE_PAGE_LOADED, pager, payload }),</span>
   onUnload: <span class="fstat-no" title="function not covered" >()</span> =&gt;
 <span class="cstat-no" title="statement not covered" >    dispatch({ type: PROFILE_PAGE_UNLOADED })</span>
 });
 &nbsp;
 class ProfileFavorites extends Profile {
-  componentWillMount() {
-    this.props.onLoad(<span class="fstat-no" title="function not covered" >pa</span>ge =&gt; <span class="cstat-no" title="statement not covered" >agent.Articles.favoritedBy(this.props.match.params.username, page),</span> Promise.all([
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillMount() {
+<span class="cstat-no" title="statement not covered" >    this.props.onLoad(<span class="fstat-no" title="function not covered" >pa</span>ge =&gt; <span class="cstat-no" title="statement not covered" >agent.Articles.favoritedBy(this.props.match.params.username, page),</span> Promise.all([</span>
       agent.Profile.get(this.props.match.params.username),
       agent.Articles.favoritedBy(this.props.match.params.username)
     ]));
@@ -181,8 +181,8 @@ class ProfileFavorites extends Profile {
 <span class="cstat-no" title="statement not covered" >    this.props.onUnload();</span>
   }
 &nbsp;
-  renderTabs() {
-    return (
+<span class="fstat-no" title="function not covered" >  re</span>nderTabs() {
+<span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;ul className="nav nav-pills outline-active"&gt;
         &lt;li className="nav-item"&gt;
           &lt;Link
@@ -211,7 +211,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(ProfileFavorites);
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue May 26 2020 18:25:04 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 27 2020 13:52:04 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

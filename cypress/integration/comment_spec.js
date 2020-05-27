@@ -19,4 +19,12 @@ describe('comments', () => {
     cy.writeArticleAndPostComment(article); //from index.js file in 'support' folder
     cy.contains('[data-cy=comment]', 'great post 👍').should('be.visible');
   });
+
+  it('Test post comment waiting for server response', () => {
+    cy.postArticle(article);
+    cy.postComment('my-new-article', 'my new comment');
+
+    cy.visit('http://localhost:4100/article/my-new-article');
+    cy.contains('[data-cy=comment]', 'my new comment').should('be.visible');
+  });
 })
