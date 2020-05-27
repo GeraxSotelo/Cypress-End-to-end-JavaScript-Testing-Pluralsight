@@ -10,7 +10,7 @@ describe('New Post on Conduit', () => {
         //Define aliases - Remember not to create aliases when you are deep in the chain
         //Place certain aliases in beforeEach() hook because it runs before each test so aliases will be defined for each test
         //You can also define aliases within a test and reference them within the test if you have a lengthy test.
-        //When using the as() command to define aliases, you can use the '@' command to reference them, but only with cy.get() or cy.wait()
+        //When you use the as() command to define aliases, you can use the '@' command to reference them, but can (only) do that with cy.get() or cy.wait()
         cy.get('[data-cy=new-post]').click().as('ClickOnNewPost');
         cy.get('[data-cy=title]').as('Title');
         cy.get('[data-cy=about]').as('About');
@@ -78,7 +78,7 @@ describe('New Post on Conduit', () => {
         cy.location('pathname').should('equal', '/@testuser');
 
         //favorite the article
-        //find element with 'article-preview'. There should only be 1 for this test
+        //find element with 'article-preview'. There should (only) be 1 for this test
         //get the first 1, find the 'fav-article' button & click it.
         cy.get('.article-preview').should('have.length', 1).first().find('[data-cy=fav-article]').click();
 
